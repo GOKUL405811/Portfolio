@@ -1,0 +1,123 @@
+#contact-main {
+    padding: 5px;
+}
+.contact-main-1 {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.contact-main-1 img {
+    width: 30px; 
+    height: 30px;
+}
+
+.contact-main-2 {
+    border: 1px solid transparent;
+    box-shadow: 2px 2px 5px; 
+    width: fit-content; 
+    padding: 20px;
+}
+#lab1 {
+    margin-left: 140px;
+}
+#lab2 {
+    margin-left: 110px;
+}
+#lab3 {
+    border: 1px solid transparent;
+    box-shadow: 2px 2px 5px; 
+    margin-top: 20px; 
+    width: 547px; 
+    margin-bottom: 2px;
+}
+
+.inputt input::placeholder {
+    color: rgb(58, 53, 53);
+}
+#mes {
+    width: 37.5vh;
+}
+#mes1 {
+    width: 37.5vh;
+    padding-bottom: 4.63vh;
+}
+
+/* contact button */
+.contact-button {
+    padding: 10px;
+    background-color: rgb(19, 141, 190);
+    color: rgb(14, 14, 14);
+    border: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+.contact-button:hover {
+    background-color: rgb(4, 150, 210);
+}
+
+.whatss {  
+    display: flex;
+    transition: 0.3s;
+    width: fit-content;
+    gap: 90px;
+}
+.whatss #whatss1,
+.whatss #whatss2,
+.whatss #whatss3,
+.whatss #whatss4 {
+    width: 30px;
+    height: 30px;
+}
+.whatss #whatss1:hover,
+.whatss #whatss2:hover,
+.whatss #whatss3:hover,
+.whatss #whatss4:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    #lab1 {
+        margin-left: 80px; /* Adjust margin for smaller screens */
+    }
+    #lab2 {
+        margin-left: 60px; /* Adjust margin for smaller screens */
+    }
+    #mes, #mes1 {
+        width: 100%; /* Make input fields full width */
+    }
+    .contact-main-2 {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-left: auto; /* Center the section */
+        margin-right: auto; /* Center the section */
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-main-1 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+    #lab1, #lab2 {
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center align labels */
+    }
+    #lab3 {
+        width: 100%; /* Make lab3 full width */
+    }
+    .whatss {
+        flex-direction: column; /* Stack social icons vertically */
+        gap: 20px; /* Adjust gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-button {
+        padding: 8px; /* Reduce button padding */
+    }
+    .whatss {
+        gap: 10px; /* Further reduce gap for smaller screens */
+    }
+}
